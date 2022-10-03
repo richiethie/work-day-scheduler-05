@@ -11,7 +11,7 @@ function currentHour() {
     // if statement to display color on < currenthour, = currenthour, > currenthour
     textArea.each(function() {
         var hourLoop = parseInt($(this).attr('id'))
-        var hourNow =  15 //moment().hour()
+        var hourNow = moment().hour()
         console.log(hourLoop)
         console.log(hourNow)
         if (hourNow > hourLoop) {
